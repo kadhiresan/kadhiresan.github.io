@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hi, I am a Software Engineer(Frontend Developer) in Mantra Labs and I have worked in various technologies like HTML5, CSS3, JS, jQuery, PHP, CakePHP, Laravel and used tools like Photoshop, Dreamweaver and Sublime text.
+Hi, I am a Software Engineer(Backend Developer) in Mantra Labs and I have worked in various technologies like HTML5, CSS3, JS, jQuery, PHP, CakePHP, Laravel and used tools like Photoshop, Dreamweaver and Sublime text.
 
 ### More Information
 
