@@ -19,9 +19,9 @@ avatar: http://kadhiresan.github.io/images/kad.png
 footer-links:
   dribbble:
   email: kkadhir10@gmail.com
-  facebook: https://www.facebook.com/kadhiresan.karuppusamy
+  facebook: kadhiresan.karuppusamy
   flickr:
-  github: https://github.com/kadhiresan
+  github: kadhiresan
   instagram:
   linkedin:
   pinterest:
@@ -29,7 +29,7 @@ footer-links:
   twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: https://plus.google.com/u/0/+kadhiresank/posts
+  googleplus: +kadhiresank/posts
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
