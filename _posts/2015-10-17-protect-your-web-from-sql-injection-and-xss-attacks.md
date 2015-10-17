@@ -10,7 +10,8 @@ Now we are just going to check how to protect our site form
 	2.XSS Attacks (Cross Site Scripting)
 
 SQL Injection:
-	Come, Let's deal with simple login authentication module, then our code probably looks like this
+
+Come, Let's deal with simple login authentication module, then our code probably looks like this
 
 ![_config.yml]({{ site.baseurl }}/images/php_securty/php_sec1.png)
 
@@ -34,6 +35,10 @@ So now we are going to handle this bad situation using PHP "mysql_real_escape_st
 ![_config.yml]({{ site.baseurl }}/images/php_securty/php_sec2.png)
 
 That's it now our site is SQL injection free.
+
+Cross-site Scripting (XSS):
+
+Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted web sites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end user.
 
 Next post we are going to look into "How to use Sublime Text IDE for more effectively - Especially Sublime Text3 on Mac"
 Thanks, stay tuned!!
