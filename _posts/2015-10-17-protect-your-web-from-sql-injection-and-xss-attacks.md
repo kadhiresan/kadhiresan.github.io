@@ -33,4 +33,7 @@ So now we are going to handle this bad situation using PHP "mysql_real_escape_st
 
 ![_config.yml]({{ site.baseurl }}/images/php_securty/php_sec2.png)
 
+That's it now our site is SQL injection free.
+
+Next post we are going to look into "How to use Sublime Text IDE for more effectively - Especially Sublime Text3 on Mac"
 Thanks, stay tuned!!
