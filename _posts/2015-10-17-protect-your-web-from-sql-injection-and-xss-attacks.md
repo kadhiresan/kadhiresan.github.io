@@ -12,28 +12,27 @@ Now we are just going to check how to protect our site form
 SQL Injection:
 	Come, Let's deal with simple login authentication module, then our code probably looks like this
 
-if(isset($_POST['user']) && isset($_POST['password'])){
-	$user     = $_POST['user'];
-	$password = $_POST['password'];
+![_config.yml]({{ site.baseurl }}/images/php_securty/php_sec1.png)
 
-	$users = mysql_query("SELECT COUNT('user_id') FROM 'users' WHERE 'user_name' = '{$user}' AND 'user_password' = '{password}' ");
-	$total = mysql_result($users, 0);
-}
-
-For example consider now user will going to enter follwing values in text boxs User Name='admin' and password='****'. 
+For example consider now user will going to enter following values in text boxes User Name='admin' and password='****'.
 In this case query will run like this,
 
 	$users = mysql_query("SELECT COUNT('user_id') FROM 'users' WHERE 'user_name' = 'admin' AND 'user_password' = '****' ");
 
-Now user will able to login successfully, everthing is going good.
+Now user will able to login successfully, everything's going good.
 
-What if user enter like this in text boxs User Name=admin' OR '1' = '1 and password = '****' else empty.
+What if user enter like this in text boxes User Name=admin' OR '1' = '1 and password = '****' else empty.
 
 in this above case query will run like this
 
 	$users = mysql_query("SELECT COUNT('user_id') FROM 'users' WHERE 'user_name' = 'admin' OR '1' = '1' AND 'user_password' = '' ");
 
-'user_name' = 'admin' OR '1' = '1' which mean its always TRUE, then any one can login as admin in your site.
-![_config.yml]({{ site.baseurl }}/images/Firtst_Post_2015-10-14.png)
+'user_name' = 'admin' OR '1' = '1' which mean it's always TRUE, then any one can login as admin in your site.
+
+'user_name' = 'admin' OR '1' = '1' which mean it's always TRUE, then any one can login as admin in your site.
+
+SO now we are going to handle this bad situation using PHP mysql_real_escape_string function and for password i am going to use md5() (you can use hash(), sha1() and lot more)
+
+![_config.yml]({{ site.baseurl }}/images/php_securty/php_sec2.png)
 
 Thanks, stay tuned!!
