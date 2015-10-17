@@ -3,11 +3,13 @@ layout: post
 title: PHP:Protect Your Web From SQL Injection and XSS Attacks
 ---
 
-Security in PHP
-1.PHP Security - SQL Injection
-2.PHP Security - XSS Attacks (Cross Site Scripting)
+PHP is a powerful language and the interpreter, whether included in a web server as a module or executed as a separate CGI binary, is able to access files, execute commands and open network connections on the server. These properties make anything run on a web server insecure by default. PHP is designed specifically to be a more secure language for writing CGI programs than Perl or C, and with correct selection of compile-time and runtime configuration options, and proper coding practices, it can give you exactly the combination of freedom and security you need.
 
-PHP Security_ SQL Injection:
+Now we are just going to check how to protect our site form 
+	1.SQL Injection and 
+	2.XSS Attacks (Cross Site Scripting)
+
+SQL Injection:
 
 if(isset($_POST['user'], $_POST['password'])){
 	$user     = $_POST['user'];
