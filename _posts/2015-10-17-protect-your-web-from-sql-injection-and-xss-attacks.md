@@ -10,6 +10,7 @@ Now we are just going to check how to protect our site form
 	2.XSS Attacks (Cross Site Scripting)
 
 SQL Injection:
+	Come, Let's deal with simple login authentication module, then our code probably looks like this
 
 if(isset($_POST['user']) && isset($_POST['password'])){
 	$user     = $_POST['user'];
