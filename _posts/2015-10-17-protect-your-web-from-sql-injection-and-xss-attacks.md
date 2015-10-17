@@ -12,12 +12,12 @@ Now we are just going to check how to protect our site form
 SQL Injection:
 	Come, Let's deal with simple login authentication module, then our code probably looks like this
 
-![_config.yml]({{ site.baseurl }}/images/php_securty/php_sec1.png)
+	![_config.yml]({{ site.baseurl }}/images/php_securty/php_sec1.png)
 
 For example consider now user will going to enter following values in text boxes User Name='admin' and password='****'.
 In this case query will run like this,
 
-	$users = mysql_query("SELECT COUNT('user_id') FROM 'users' WHERE 'user_name' = 'admin' AND 'user_password' = '****' ");
+	![_config.yml]({{ site.baseurl }}/images/php_securty/query1_normal.png)
 
 Now user will able to login successfully, everything's going good.
 
@@ -25,14 +25,12 @@ What if user enter like this in text boxes User Name=admin' OR '1' = '1 and pass
 
 in this above case query will run like this
 
-	$users = mysql_query("SELECT COUNT('user_id') FROM 'users' WHERE 'user_name' = 'admin' OR '1' = '1' AND 'user_password' = '' ");
+	![_config.yml]({{ site.baseurl }}/images/php_securty/query2_hack.png)
 
 'user_name' = 'admin' OR '1' = '1' which mean it's always TRUE, then any one can login as admin in your site.
 
-'user_name' = 'admin' OR '1' = '1' which mean it's always TRUE, then any one can login as admin in your site.
+So now we are going to handle this bad situation using PHP "mysql_real_escape_string" function and for password i am going to use md5() (you can use hash(), sha1() and lot more)
 
-SO now we are going to handle this bad situation using PHP mysql_real_escape_string function and for password i am going to use md5() (you can use hash(), sha1() and lot more)
-
-![_config.yml]({{ site.baseurl }}/images/php_securty/php_sec2.png)
+	![_config.yml]({{ site.baseurl }}/images/php_securty/php_sec2.png)
 
 Thanks, stay tuned!!
