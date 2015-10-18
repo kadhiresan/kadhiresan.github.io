@@ -43,7 +43,8 @@ Cross-Site Scripting (XSS) is general hacking method used on websites it's norma
 
 For example,
 URLs: www.kadhir.com?name=admin
-web pages: code to be in <script> tags, If you go to web page it's not going to be visible but it will still run
+
+web pages: code to be in script tags, If you go to web page it's not going to be visible but it will still run
 
 Two Types of XSS:
 
