@@ -37,8 +37,22 @@ So now we are going to handle this bad situation using PHP "mysql_real_escape_st
 That's it now our site is SQL injection free.
 
 Cross-site Scripting (XSS):
+i would say XSS is a pretty common hacking method and its important to you know how Cross-site Scripting works.
+Cross-Site Scripting (XSS) is general hacking method used on websites it's normally based on the principal you can hide scripts behind urls and web pages.
 
-Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted web sites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end user.
+For example,
+URLs: www.kadhir.com?name=admin
+web pages: code to be in <script> tags, If you go to web page it's not going to be visible but it will still run
+
+Two Types of XSS
+1.Persistent
+	2.Non-Persistent
+
+Non-Persistent will going to modify a client side information nothing is send to a database.
+
+Persistent attack using web page(front end) you can store malicious code into back end, then it will send that malicious code to every user for each request.
+
+image of script tag in text box and i will store in DB
 
 Next post we are going to look into "How to use Sublime Text IDE for more effectively - Especially Sublime Text3 on Mac"
 Thanks, stay tuned!!
