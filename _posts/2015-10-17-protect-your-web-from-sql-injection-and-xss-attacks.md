@@ -33,11 +33,11 @@ in this above case query will run like this
 
 'user_name' = 'admin' OR '1' = '1' which mean it's always TRUE, then any one can login as admin in your site.
 
-So now we are going to handle this bad situation using PHP <code>[mysql_real_escape_string](http://php.net/manual/en/function.mysql-real-escape-string.php)</code> function and for password i am going to use [md5()](http://github.com/barryclark/jekyll-now/). You can use [hash()] (http://php.net/manual/en/function.hash.php), [sha1()](http://php.net/manual/en/function.sha1.php) and lot more..
+So now we are going to handle this bad situation using PHP [mysql_real_escape_string](http://php.net/manual/en/function.mysql-real-escape-string.php) function and for password i am going to use [md5()](http://github.com/barryclark/jekyll-now/). You can use [hash()] (http://php.net/manual/en/function.hash.php), [sha1()](http://php.net/manual/en/function.sha1.php) and lot more..
 
 ![_config.yml]({{ site.baseurl }}/images/php_securty/php_sec2.png)
 
-That's it now our site is SQL injection free.
+That's it now your site is free from <code>SQL injection</code>.
 
 **Cross-site Scripting (XSS):**
 
@@ -65,7 +65,7 @@ The simple way to protect XSS is don't simply store user data in DB and don't si
 
 ![_config.yml]({{ site.baseurl }}/images/php_securty/htmlentities.png)
 
-That's it, now you are pretty much safe from XSS. Of course if you are using framework it will take care of these things by default, but i would say it's a good practice to do this one.
+That's it, now you are pretty much safe from <code>XSS</code>. Of course if you are using framework it will take care of these things by default, but i would say it's a good practice to do this one.
 
 Next post we are going to look into "How to use Sublime Text IDE for more effectively - Especially Sublime Text3 on Mac"
 _Thanks, stay tuned!!_
