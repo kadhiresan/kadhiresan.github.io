@@ -55,7 +55,14 @@ Non-Persistent will going to modify a client side information nothing is send to
 
 Persistent attack using web page(front end) you can store malicious code into back end, then it will send that malicious code to every user for each request.
 
+This example user can store this script in DB, 
 ![_config.yml]({{ site.baseurl }}/images/php_securty/xss_attach1.png)
+
+The simple way to protect XSS is don't simply store user data in DB and don't simply display in browser use htmlentities to validate user input before going to store and display. For example check below image
+
+![_config.yml]({{ site.baseurl }}/images/php_securty/htmlentities.png)
+
+That's it now you are pretty much safe from XSS. Of course if you are using framework it will take these things default, but i would say it's a good practice to do this one(at least keep in mind).
 
 Next post we are going to look into "How to use Sublime Text IDE for more effectively - Especially Sublime Text3 on Mac"
 Thanks, stay tuned!!
