@@ -30,7 +30,7 @@ in this above case query will run like this
 
 'user_name' = 'admin' OR '1' = '1' which mean it's always TRUE, then any one can login as admin in your site.
 
-So now we are going to handle this bad situation using PHP "mysql_real_escape_string" function and for password i am going to use 'md5()' (you can use 'hash()', 'sha1()' and lot more)
+So now we are going to handle this bad situation using PHP "mysql_real_escape_string" function and for password i am going to use ```md5()``` (you can use ```hash()```, ```sha1()``` and lot more)
 
 ![_config.yml]({{ site.baseurl }}/images/php_securty/php_sec2.png)
 
