@@ -50,9 +50,10 @@ URLs: www.kadhir.com?name=admin
 web pages: code to be in script tags, If you go to web page it's not going to be visible but it will still run
 
 **Two Types of XSS:**
-
+```
 	1.Persistent
 	2.Non-Persistent
+```
 
 **Non-Persistent** will going to modify a client side information nothing is send to a database.
 
