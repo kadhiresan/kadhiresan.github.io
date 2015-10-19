@@ -41,7 +41,7 @@ That's it now our site is SQL injection free.
 
 **Cross-site Scripting (XSS):**
 
-i would say XSS is a pretty common hacking method and its important to you know how Cross-site Scripting works.
+I would say XSS is a pretty common hacking method and its important to you know how Cross-site Scripting works.
 Cross-Site Scripting (XSS) is general hacking method used on websites it's normally based on the principal you can hide scripts behind urls and web pages.
 
 For example,
@@ -61,11 +61,11 @@ web pages: code to be in script tags, If you go to web page it's not going to be
 This example user can store this script in DB, 
 ![_config.yml]({{ site.baseurl }}/images/php_securty/xss_attach1.png)
 
-The simple way to protect XSS is don't simply store user data in DB and don't simply display in browser use htmlentities to validate user input before going to store and display. For example check below image
+The simple way to protect XSS is don't simply store user data in DB and don't simply display in browser use [htmlentities](http://php.net/manual/en/function.htmlentities.php) to validate user input before going to store and display. For example check below image
 
 ![_config.yml]({{ site.baseurl }}/images/php_securty/htmlentities.png)
 
 That's it, now you are pretty much safe from XSS. Of course if you are using framework it will take care of these things by default, but i would say it's a good practice to do this one.
-
+----
 Next post we are going to look into "How to use Sublime Text IDE for more effectively - Especially Sublime Text3 on Mac"
 _Thanks, stay tuned!!_
