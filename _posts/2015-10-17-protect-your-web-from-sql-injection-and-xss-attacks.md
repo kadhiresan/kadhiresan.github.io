@@ -9,7 +9,7 @@ Now we are just going to check how to protect our site form
 	1.SQL Injection and 
 	2.XSS Attacks (Cross Site Scripting)
 
-SQL Injection:
+**SQL Injection:**
 
 Come, Let's deal with simple login authentication module, then our code probably looks like this
 
@@ -30,13 +30,13 @@ in this above case query will run like this
 
 'user_name' = 'admin' OR '1' = '1' which mean it's always TRUE, then any one can login as admin in your site.
 
-So now we are going to handle this bad situation using PHP "mysql_real_escape_string" function and for password i am going to use md5() (you can use hash(), sha1() and lot more)
+So now we are going to handle this bad situation using PHP "mysql_real_escape_string" function and for password i am going to use 'md5()' (you can use 'hash()', 'sha1()' and lot more)
 
 ![_config.yml]({{ site.baseurl }}/images/php_securty/php_sec2.png)
 
 That's it now our site is SQL injection free.
 
-Cross-site Scripting (XSS):
+**Cross-site Scripting (XSS):**
 
 i would say XSS is a pretty common hacking method and its important to you know how Cross-site Scripting works.
 Cross-Site Scripting (XSS) is general hacking method used on websites it's normally based on the principal you can hide scripts behind urls and web pages.
@@ -46,14 +46,14 @@ URLs: www.kadhir.com?name=admin
 
 web pages: code to be in script tags, If you go to web page it's not going to be visible but it will still run
 
-Two Types of XSS:
+**Two Types of XSS:**
 
 	1.Persistent
 	2.Non-Persistent
 
-Non-Persistent will going to modify a client side information nothing is send to a database.
+**Non-Persistent** will going to modify a client side information nothing is send to a database.
 
-Persistent attack using web page(front end) you can store malicious code into back end, then it will send that malicious code to every user for each request.
+**Persistent** attack using web page(front end) you can store malicious code into back end, then it will send that malicious code to every user for each request.
 
 This example user can store this script in DB, 
 ![_config.yml]({{ site.baseurl }}/images/php_securty/xss_attach1.png)
@@ -62,7 +62,7 @@ The simple way to protect XSS is don't simply store user data in DB and don't si
 
 ![_config.yml]({{ site.baseurl }}/images/php_securty/htmlentities.png)
 
-That's it now you are pretty much safe from XSS. Of course if you are using framework it will take these things default, but i would say it's a good practice to do this one(at least keep in mind).
+That's it, now you are pretty much safe from XSS. Of course if you are using framework it will take care of these things by default, but i would say it's a good practice to do this one.
 
 Next post we are going to look into "How to use Sublime Text IDE for more effectively - Especially Sublime Text3 on Mac"
-Thanks, stay tuned!!
+_Thanks, stay tuned!!_
