@@ -68,5 +68,5 @@ The simple way to protect XSS is don't simply store user data in DB and don't si
 
 That's it, now you are pretty much safe from <code>XSS</code>. Of course if you are using framework it will take care of these things by default, but i would say it's a good practice to do this one.
 
-Next post we are going to look into "How to use Sublime Text IDE for more effectively - Especially Sublime Text3 on Mac"
+Next post we are going to look into "How to use Sublime Text IDE for more effectively"
 _Thanks, stay tuned!!_
