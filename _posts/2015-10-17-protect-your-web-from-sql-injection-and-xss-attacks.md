@@ -5,9 +5,9 @@ title: PHP:Protect Your Web From SQL Injection and XSS Attacks
 
 PHP is a powerful language and the interpreter, whether included in a web server as a module or executed as a separate CGI binary, is able to access files, execute commands and open network connections on the server. These properties make anything run on a web server insecure by default. PHP is designed specifically to be a more secure language for writing CGI programs than Perl or C, and with correct selection of compile-time and runtime configuration options, and proper coding practices, it can give you exactly the combination of freedom and security you need.
 
-Now we are just going to check how to protect our site form 
-	
-	1.SQL Injection and 
+Now we are just going to check how to protect our site form
+
+	1.SQL Injection and
 	2.XSS Attacks (Cross Site Scripting)
 
 **SQL Injection:**
@@ -23,8 +23,8 @@ In this case query will run like this,
 
 Now user will able to login successfully, everything's going good.
 
-What if user enter like this in text boxes 
-> User Name=admin' OR '1' = '1 and 
+What if user enter like this in text boxes
+> User Name=admin' OR '1' = '1 and
 > password = '****' else empty.
 
 in this above case query will run like this
@@ -59,7 +59,7 @@ web pages: code to be in script tags, If you go to web page it's not going to be
 
 **Persistent** attack using web page(front end) you can store malicious code into back end, then it will send that malicious code to every user for each request.
 
-This example user can store this script in DB, 
+This example user can store this script in DB,
 ![_config.yml]({{ site.baseurl }}/images/php_securty/xss_attach1.png)
 
 The simple way to protect XSS is don't simply store user data in DB and don't simply display in browser use [htmlentities](http://php.net/manual/en/function.htmlentities.php) to validate user input before going to store and display. For example check below image
@@ -68,5 +68,5 @@ The simple way to protect XSS is don't simply store user data in DB and don't si
 
 That's it, now you are pretty much safe from <code>XSS</code>. Of course if you are using framework it will take care of these things by default, but i would say it's a good practice to do this one.
 
-Next post we are going to look into "How to use Sublime Text IDE for more effectively"
+Next post we are going to look into "How to use Text Editor (code editing tool - IDE) for more effectively"
 _Thanks, stay tuned!!_
