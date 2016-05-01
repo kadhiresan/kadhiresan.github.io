@@ -20,7 +20,7 @@ object-oriented computer programming language commonly used to create interactiv
   10. Loops
   11. Prototypes
 
-**Comments**
+**1.Comments**
 
 Comments: In javascript there are 2 types of comments
 
@@ -35,15 +35,15 @@ Comments: In javascript there are 2 types of comments
 */
 ```
 
-**DataTypes**
+**2.DataTypes**
 
-1.Primitive data types:
++Primitive data types:
 
-* number
-* string
-* boolean (true or false)
-* undefined
-* null
+  - number
+  - string
+  - boolean (true or false)
+  - undefined
+  - null
 
 ```javascript
 var foo = 1; //number
@@ -52,10 +52,10 @@ var foo = 1; //number
 
 Above primitive data type values are accessed directly without any reference.
 
-2.Other datatypes: such as **object, array** are accessed by its reference
++.Other datatypes: such as **object, array** are accessed by its reference
 
-* object
-* array
+  - object
+  - array
 
 ```javascript
 var foo = [1, 'hello']; //array
