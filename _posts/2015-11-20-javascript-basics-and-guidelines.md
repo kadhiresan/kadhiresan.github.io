@@ -13,14 +13,14 @@ Hit on that Package Control option then enter “Package Control: install packag
 
 **Table of contents**
 
-  1.Comments
-  2.Types (Primitives)
-  3.Arrays
-  4.Objects and this
-  5.Strings
-  6.Functions
-  7.Variables
-  8.Conditional Statements
-  9.Comparison Operators
-  10.Loops
-  11.Prototypes
+  1. Comments
+  2. Types (Primitives)
+  3. Arrays
+  4. Objects and this
+  5. Strings
+  6. Functions
+  7. Variables
+  8. Conditional Statements
+  9. Comparison Operators
+  10 .Loops
+  11 .Prototypes
