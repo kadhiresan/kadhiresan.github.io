@@ -101,7 +101,7 @@ console.log(obj.name); // "bar"
 ```
 **3.Arrays**
 
-Array can hold more then one values of different data types.
+Array can hold more then one values of different data types
 
   * creation using literal syntax
 ```javascript
@@ -153,6 +153,7 @@ console.log(bar.length); //print 3
 ```
 
 **4.Objects** ([Objects Overview](http://www.tutorialspoint.com/javascript/javascript_objects.htm))
+
 Object creation using literal syntax
 
 ```javascript
@@ -174,7 +175,7 @@ console.log(obj.name); //print ABC
 
 console.log(obj['name']); //print ABC
 ```
-* Use better naming convension and don't use reserved keywords such as private, class etc.
+  * Use better naming convension and don't use reserved keywords such as private, class etc.
 ```javascript
 //bad
 var obj = {
@@ -186,7 +187,7 @@ var obj = {
   type: 'car'
 };
 ```
-* The this Keyword
+  * The this Keyword
 **this** is not a variable. It is a keyword. You cannot change the value of this.
 
 ```javascript
