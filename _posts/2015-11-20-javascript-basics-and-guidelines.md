@@ -27,12 +27,87 @@ Comments: In javascript there are 2 types of comments
 
   * Multi line comment
 
-  <code>
+  ```javascript
     //this is a single line comment
 
     /*
       this is a multi line comment
     */
-  </code>
+  
+  ```javascript
+
+**DataTypes**
+
+  1.Primitive data types:
+
+    * number
+
+    * string
+
+    * boolean (true or false)
+
+    * undefined
+
+    * null
+
+    ```javascript
+      var foo = 1; //number
+      var bar = 'Hello World'; //string
+    ```javascript
+
+    Above primitive data type values are accessed directly without any reference.
+
+  2.Other datatypes: such as object, array are accessed by its reference
+
+    * object
+
+    * array
+
+    ```javascript
+      var foo = [1, 'hello']; //array
+
+      foo[0] = 1; //accessing array value by its reference
+
+      var bar = {
+        name: 'Hello World' 
+      }; //object
+
+      bar.name = 'Hello World'; //accessing object by its reference
+    ```javascript
+    An example for String
+    
+    ```javascript
+      function stringFunz(str) {
+        str = 'bar';
+      }
+
+      var string = 'foo';
+      console.log(string); // "foo"
+
+      stringFunz(string);
+      console.log(string); // "foo"
+
+      //Above string still remains as 'foo'
+    ```javascript
+    
+    Now let's try it with a reference in object
+    ```javascript
+    function objectFunz(obj) {
+      obj.name = 'bar';
+    }
+
+    var obj = {}; //New object
+
+    obj.name = 'foo';
+    console.log(obj.name); // "foo"
+
+    objectFunz(object);
+    console.log(obj.name); // "bar"
+
+    //See now the obj.name is changed to 'bar'
+    ```javascript
+
+
+
 
 
