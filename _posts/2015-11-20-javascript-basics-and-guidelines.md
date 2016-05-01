@@ -315,6 +315,7 @@ alert(foo); //will alert 10
 ```
 
 **8.Comparison Operators**
+
 Always use === instead of == and !== instead of !=
 
 Difference is that === and !== will also check the type of the variable, See below example
@@ -333,6 +334,7 @@ var foo = 1;
 ```
 
 **9.Loops**
+
 for, for/in, while, do/while loop
 
 * for loop
@@ -402,6 +404,7 @@ while (i < 10) {
 
 * do/while loop will execute once, before checking the condition in while
 
+```javascript
 do {
   //Execute once before checking while condition
 } while(statement 1)
@@ -417,16 +420,17 @@ do {
 } while (i < 10) 
 ```
 
-<code>Tips: dont use array.length in for loop, i mean you need to get the length of array value befor loop start</code>
+<code>Tips: dont use array.length in for loop, i mean you need to get the length of array value before loop start</code>
 
 ```javascript
 var number = [1,2,3,4,5,6,7,8,9];
-var len = number.length; //else length will call each loop
+var len = number.length; //else .length will call each iteration
 for (var i = 0; i < len; i++) { 
   //code
 }
 ```
 **10.Prototypes**
+
 In javascript function, array, objects are considered as objects
 
 All objects in js inherit, properties and methods from the prototype
