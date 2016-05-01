@@ -355,7 +355,7 @@ for (var i in foo) {
 }
 
 //Looping through an object
-var obj = { fname : 'gokul', lname : 'krishh'};
+var obj = { fname : 'Kadhir', lname : 'kk'};
 
 for (var name in obj) { 
 
@@ -363,7 +363,7 @@ for (var name in obj) {
   //hasOwnProperty is only to check objects
 
   if (obj.hasOwnProperty(name)) {
-    console.log(obj[name]); //Will print "gokul" and "krishh"
+    console.log(obj[name]); //Will print "Kadhir" and "kk"
   }
 
 }
@@ -427,9 +427,9 @@ person.prototype.model = 'Car';
 
 //model `car` is added to the person() from its prototype
 
-var newPerson = new person('Gokul', 23); //calling the person()
+var newPerson = new person('Kadhir', 23); //calling the person()
 
-console.log(newPerson); //Will print {name: "Gokul", age: 23, model: "Car"}
+console.log(newPerson); //Will print {name: "Kadhir", age: 23, model: "Car"}
 ```
 
 
