@@ -136,6 +136,7 @@ bar.unshift(2); //adds 2 before 1
 console.log(bar); //print [2, 1]
 ```
   * Remove an item at start of an array
+
 ```javascript
 
 var bar = [4, 1, 2];
@@ -144,6 +145,7 @@ bar.shift(); //removes 4 from the start
 console.log(bar); //print [1, 2]
 ```
   * Remove an item at the end of an array
+
 ```javascript
 
 var bar = [2, 1, 5];
@@ -152,6 +154,7 @@ bar.pop(); //removes 5 from the end
 console.log(bar); //print [2, 1]
 ```
   * Get the length of an array
+
 ```javascript
 
 var bar = [1, 2, 'hello'];
@@ -183,6 +186,7 @@ console.log(obj.name); //print ABC
 console.log(obj['name']); //print ABC
 ```
   * Use better naming convension and don't use reserved keywords such as private, class etc.
+
 ```javascript
 //bad
 var obj = {
@@ -282,6 +286,7 @@ namedFunz();
 **7.Variables**
 
 * Variable creation
+
 ```javascript
 //bad
 foo = 1; //Stores 1 as global variable
@@ -291,6 +296,7 @@ var foo = 1; //assigns number 1 to the variable foo
 ```
 
 * Local and Global variables
+
 ```javascript
 //global
 var foo = 1; 
@@ -330,6 +336,7 @@ var foo = 1;
 for, for/in, while, do/while loop
 
 * for loop
+
 ```javascript
 for (statement 1; statement 2; statement 3) {
 
@@ -347,6 +354,7 @@ for (var i = 0; i < 10; i++) {
 ```
 
 * for/in loop to loop through an array or object
+
 ```javascript
 for (var x in array or object)  {
 
@@ -375,6 +383,7 @@ for (var name in obj) {
 ```
 
 * while loop
+
 ```javascript
 while (statement 1) {
 
@@ -409,6 +418,7 @@ do {
 ```
 
 <code>Tips: dont use array.length in for loop, i mean you need to get the length of array value befor loop start</code>
+
 ```javascript
 var number = [1,2,3,4,5,6,7,8,9];
 var len = number.length; //else length will call each loop
