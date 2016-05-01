@@ -99,11 +99,10 @@ function objectFunz(obj) {
 
 //See now the obj.name is changed to 'bar'
 ```
-3.Arrays
+**3.Arrays**
 Array can hold more then one variable with deffirent data dypes.
 
 * creation using literal syntax
-
 ```javascript
 //Bad
 var foo = New Array();
@@ -111,48 +110,48 @@ var foo = New Array();
 //Good
 var foo = []; //array literal
 ```
-  - Array starts at index 0
+* Array starts at index 0
 ```javascript
 var bar = [1]; // array starts at index 0
 
 console.log(bar[0]); //print 1
 ```
-  - Add a new item to an array
+* Add a new item to an array
 ```javascript
 var bar = [1];
 bar.push(2); //adds 2 at the end of an array
 
 console.log(bar); //print [1, 2]
 ```
-  - Add a new item at start of an array
+* Add a new item at start of an array
 ```javascript
 var bar = [1];
 bar.unshift(2); //adds 2 before 1
 
 console.log(bar); //print [2, 1]
 ```
-  - Remove an item at start of an array
+* Remove an item at start of an array
 ```javascript
 var bar = [4, 1, 2];
 bar.shift(); //removes 4 from the start
 
 console.log(bar); //print [1, 2]
 ```
-  - Remove an item at the end of an array
+* Remove an item at the end of an array
 ```javascript
 var bar = [2, 1, 5];
 bar.pop(); //removes 5 from the end
 
 console.log(bar); //print [2, 1]
 ```
-  - Get the length of an array
+* Get the length of an array
 ```javascript
 var bar = [1, 2, 'hello'];
 
 console.log(bar.length); //print 3
 ```
 
-4.Objects ([Objects Overview](http://www.tutorialspoint.com/javascript/javascript_objects.htm))
+**4.Objects** ([Objects Overview](http://www.tutorialspoint.com/javascript/javascript_objects.htm))
 Object creation using literal syntax
 
 ```javascript
@@ -210,8 +209,7 @@ this.a = 37;
 console.log(window.a); // 37
 ```
 
-5.Strings
-
+**5.Strings**
 Using single quote '' for strings
 
 ```javascript
@@ -228,7 +226,7 @@ Using + to concatenate strings
 var bar = 'Hi i am ' + 'kadhir';
 ```
 
-6.Functions
+**6.Functions**
 
 * Function declarations
 
@@ -272,7 +270,7 @@ namedFunz();
 })();
 ```
 
-7.Variables
+**7.Variables**
 
 * Variable creation
 ```javascript
@@ -301,8 +299,7 @@ funz(); //calling the function
 alert(foo); //will alert 10
 ```
 
-9.Comparison Operators
-
+**8.Comparison Operators**
 Always use === instead of == and !== instead of !=
 
 Difference is that === and !== will also check the type of the variable, See below example
@@ -320,8 +317,7 @@ var foo = 1;
  console.log(bar !== foo); //True , '1' is not equal value as well as type
 ```
 
-10.Loops
-
+**9.Loops**
 for, for/in, while, do/while loop
 
 * for loop
@@ -411,8 +407,7 @@ for (var i = 0; i < len; i++) {
   //code
 }
 ```
-10.Prototypes
-
+**10.Prototypes**
 In javascript function, array, objects are considered as objects
 
 All objects in js inherit, properties and methods from the prototype
