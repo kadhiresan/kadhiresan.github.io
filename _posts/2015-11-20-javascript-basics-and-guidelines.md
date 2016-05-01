@@ -23,89 +23,84 @@ object-oriented computer programming language commonly used to create interactiv
 **Comments**
 
 Comments: In javascript there are 2 types of comments
-  * Single line comment
+* Single line comment
 
-  * Multi line comment
+* Multi line comment
 
-  ```javascript
-    //this is a single line comment
+```javascript
+//this is a single line comment
 
-    /*
-      this is a multi line comment
-    */
-  
-  ```javascript
+/*
+  this is a multi line comment
+*/
+```
 
 **DataTypes**
 
-  1.Primitive data types:
+1.Primitive data types:
 
-    * number
+* number
+* string
+* boolean (true or false)
+* undefined
+* null
 
-    * string
+```javascript
+var foo = 1; //number
+var bar = 'Hello World'; //string
+```
 
-    * boolean (true or false)
+Above primitive data type values are accessed directly without any reference.
 
-    * undefined
+2.Other datatypes: such as object, array are accessed by its reference
 
-    * null
+* object
+* array
 
-    ```javascript
-      var foo = 1; //number
-      var bar = 'Hello World'; //string
-    ```javascript
+```javascript
+var foo = [1, 'hello']; //array
 
-    Above primitive data type values are accessed directly without any reference.
+foo[0] = 1; //accessing array value by its reference
 
-  2.Other datatypes: such as object, array are accessed by its reference
+var bar = {
+  name: 'Hello World' 
+}; //object
 
-    * object
+bar.name = 'Hello World'; //accessing object by its reference
+```
+An example for String
 
-    * array
+```javascript
+function stringFunz(str) {
+  str = 'bar';
+}
 
-    ```javascript
-      var foo = [1, 'hello']; //array
+var string = 'foo';
+console.log(string); // "foo"
 
-      foo[0] = 1; //accessing array value by its reference
+stringFunz(string);
+console.log(string); // "foo"
 
-      var bar = {
-        name: 'Hello World' 
-      }; //object
+//Above string still remains as 'foo'
+```
 
-      bar.name = 'Hello World'; //accessing object by its reference
-    ```javascript
-    An example for String
-    
-    ```javascript
-      function stringFunz(str) {
-        str = 'bar';
-      }
+Now let's try it with a reference in object
 
-      var string = 'foo';
-      console.log(string); // "foo"
+```javascript
+function objectFunz(obj) {
+  obj.name = 'bar';
+}
 
-      stringFunz(string);
-      console.log(string); // "foo"
+var obj = {}; //New object
 
-      //Above string still remains as 'foo'
-    ```javascript
-    
-    Now let's try it with a reference in object
-    ```javascript
-    function objectFunz(obj) {
-      obj.name = 'bar';
-    }
+obj.name = 'foo';
+console.log(obj.name); // "foo"
 
-    var obj = {}; //New object
+objectFunz(object);
+console.log(obj.name); // "bar"
 
-    obj.name = 'foo';
-    console.log(obj.name); // "foo"
-
-    objectFunz(object);
-    console.log(obj.name); // "bar"
-
-    //See now the obj.name is changed to 'bar'
-    ```javascript
+//See now the obj.name is changed to 'bar'
+```
 
 
 
