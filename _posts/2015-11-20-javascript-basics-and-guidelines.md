@@ -100,7 +100,7 @@ function objectFunz(obj) {
 //See now the obj.name is changed to 'bar'
 ```
 **3.Arrays**
-Array can hold more then one variable with deffirent data dypes.
+Array can hold more then one values of different data types.
 
 * creation using literal syntax
 ```javascript
