@@ -89,17 +89,18 @@ function objectFunz(obj) {
   obj.name = 'bar';
 }
 
- var obj = {}; //New object
+var obj = {}; //New object
 
- obj.name = 'foo';
- console.log(obj.name); // "foo"
+obj.name = 'foo';
+console.log(obj.name); // "foo"
 
- objectFunz(obj);
- console.log(obj.name); // "bar"
+objectFunz(obj);
+console.log(obj.name); // "bar"
 
 //See now the obj.name is changed to 'bar'
 ```
 **3.Arrays**
+
 Array can hold more then one values of different data types.
 
 * creation using literal syntax
