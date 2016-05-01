@@ -103,7 +103,7 @@ console.log(obj.name); // "bar"
 
 Array can hold more then one values of different data types.
 
-* creation using literal syntax
+  * creation using literal syntax
 ```javascript
 //Bad
 var foo = New Array();
@@ -111,41 +111,41 @@ var foo = New Array();
 //Good
 var foo = []; //array literal
 ```
-* Array starts at index 0
+  * Array starts at index 0
 ```javascript
 var bar = [1]; // array starts at index 0
 
 console.log(bar[0]); //print 1
 ```
-* Add a new item to an array
+  * Add a new item to an array
 ```javascript
 var bar = [1];
 bar.push(2); //adds 2 at the end of an array
 
 console.log(bar); //print [1, 2]
 ```
-* Add a new item at start of an array
+  * Add a new item at start of an array
 ```javascript
 var bar = [1];
 bar.unshift(2); //adds 2 before 1
 
 console.log(bar); //print [2, 1]
 ```
-* Remove an item at start of an array
+  * Remove an item at start of an array
 ```javascript
 var bar = [4, 1, 2];
 bar.shift(); //removes 4 from the start
 
 console.log(bar); //print [1, 2]
 ```
-* Remove an item at the end of an array
+  * Remove an item at the end of an array
 ```javascript
 var bar = [2, 1, 5];
 bar.pop(); //removes 5 from the end
 
 console.log(bar); //print [2, 1]
 ```
-* Get the length of an array
+  * Get the length of an array
 ```javascript
 var bar = [1, 2, 'hello'];
 
