@@ -37,8 +37,7 @@ Comments: In javascript there are 2 types of comments
 
 **2.DataTypes**
 
-+Primitive data types:
-
+*Primitive data types:
   - number
   - string
   - boolean (true or false)
@@ -52,8 +51,7 @@ var foo = 1; //number
 
 Above primitive data type values are accessed directly without any reference.
 
-+.Other datatypes: such as **object, array** are accessed by its reference
-
+*Other datatypes: such as **object, array** are accessed by its reference
   - object
   - array
 
