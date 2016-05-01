@@ -23,8 +23,8 @@ object-oriented computer programming language commonly used to create interactiv
 **Comments**
 
 Comments: In javascript there are 2 types of comments
-* Single line comment
 
+* Single line comment
 * Multi line comment
 
 ```javascript
@@ -47,12 +47,12 @@ Comments: In javascript there are 2 types of comments
 
 ```javascript
 var foo = 1; //number
-var bar = 'Hello World'; //string
+ var bar = 'Hello World'; //string
 ```
 
 Above primitive data type values are accessed directly without any reference.
 
-2.Other datatypes: such as object, array are accessed by its reference
+2.Other datatypes: such as **object, array** are accessed by its reference
 
 * object
 * array
@@ -60,13 +60,13 @@ Above primitive data type values are accessed directly without any reference.
 ```javascript
 var foo = [1, 'hello']; //array
 
-foo[0] = 1; //accessing array value by its reference
+ foo[0] = 1; //accessing array value by its reference
 
-var bar = {
-  name: 'Hello World' 
-}; //object
+ var bar = {
+   name: 'Hello World' 
+ }; //object
 
-bar.name = 'Hello World'; //accessing object by its reference
+ bar.name = 'Hello World'; //accessing object by its reference
 ```
 An example for String
 
@@ -75,11 +75,11 @@ function stringFunz(str) {
   str = 'bar';
 }
 
-var string = 'foo';
-console.log(string); // "foo"
+ var string = 'foo';
+ console.log(string); // "foo"
 
-stringFunz(string);
-console.log(string); // "foo"
+ stringFunz(string);
+ console.log(string); // "foo"
 
 //Above string still remains as 'foo'
 ```
@@ -91,13 +91,13 @@ function objectFunz(obj) {
   obj.name = 'bar';
 }
 
-var obj = {}; //New object
+ var obj = {}; //New object
 
-obj.name = 'foo';
-console.log(obj.name); // "foo"
+ obj.name = 'foo';
+ console.log(obj.name); // "foo"
 
-objectFunz(object);
-console.log(obj.name); // "bar"
+ objectFunz(object);
+ console.log(obj.name); // "bar"
 
 //See now the obj.name is changed to 'bar'
 ```
