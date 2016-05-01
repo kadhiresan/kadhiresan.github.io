@@ -37,7 +37,7 @@ Comments: In javascript there are 2 types of comments
 
 **2.DataTypes**
 
-*Primitive data types:
+* Primitive data types:
   - number
   - string
   - boolean (true or false)
@@ -47,11 +47,12 @@ Comments: In javascript there are 2 types of comments
 ```javascript
 var foo = 1; //number
  var bar = 'Hello World'; //string
+ var a; // a is undefined (check what is the diff between undefined and null in js)
 ```
 
 Above primitive data type values are accessed directly without any reference.
 
-*Other datatypes: such as **object, array** are accessed by its reference
+* Other datatypes: such as **object, array** are accessed by its reference
   - object
   - array
 
@@ -69,8 +70,8 @@ var foo = [1, 'hello']; //array
 An example for String
 
 ```javascript
-function stringFunz(str) {
-  str = 'bar';
+function stringFunz(string) {
+  string = 'bar';
 }
 
  var string = 'foo';
@@ -94,11 +95,63 @@ function objectFunz(obj) {
  obj.name = 'foo';
  console.log(obj.name); // "foo"
 
- objectFunz(object);
+ objectFunz(obj);
  console.log(obj.name); // "bar"
 
 //See now the obj.name is changed to 'bar'
 ```
+3.Arrays
+Array can hold more then one variable with deffirent data dypes.
+* creation using literal syntax
+```javascript
+//Bad
+var foo = New Array();
+
+//Good
+var foo = []; //array literal
+```
+ - Array starts at index 0
+  ```javascript
+  var bar = [1]; // array starts at index 0
+
+  console.log(bar[0]); //print 1
+  ```
+  - Add a new item to an array
+  ```javascript
+  var bar = [1];
+  bar.push(2); //adds 2 at the end of an array
+  
+  console.log(bar); //print [1, 2]
+  ```
+  - Add a new item at start of an array
+  ```javascript
+  var bar = [1];
+  bar.unshift(2); //adds 2 before 1
+
+  console.log(bar); //print [2, 1]
+  ```
+  - Remove an item at start of an array
+  ```javascript
+  var bar = [4, 1, 2];
+  bar.shift(); //removes 4 from the start
+
+  console.log(bar); //print [1, 2]
+  ```
+  - Remove an item at the end of an array
+  ```javascript
+  var bar = [2, 1, 5];
+  bar.pop(); //removes 5 from the end
+
+  console.log(bar); //print [2, 1]
+  ```
+  - Get the length of an array
+  ```javascript
+  var bar = [1, 2, 'hello'];
+
+  console.log(bar.length); //print 3
+  ```
+
+
 
 
 
