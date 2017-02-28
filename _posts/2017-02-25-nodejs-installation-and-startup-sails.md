@@ -21,19 +21,40 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.j
 * Step 1
   - Download the you nodejs source code or pre-built installer for your platform
 * Step 2
-  - Install the node software you download from the above link
+  - Install the node software, you download from the above link
+  ![_config.yml]({{ site.baseurl }}/images/nodejs_installation/nodejs-setup.png)
 * Step 3
   - Make sure you have Node and NPM installed by running simple commands to see what version of each is installed and to run a simple test program
   - Open the terminal or any similar command line tool, and type below commands
-  
-  > node -v
-  > npm -v
-* Step 4
-  - Install the Sails js globally
 
   ```
-  $ npm install sails -g kad
+  $ node -v
+  $ npm -v
   ```
+* Step 4
+  - Install the Sails js globally, To install
+
+  ```
+  $ npm
+
+* Step 5
+  - To generate a new app, just cd into the directory where you want it to be, and type:
+
+  ```
+  $ sails new [project-name]
+  ```
+  - If its done, you will get message like this
+  > info: Created a new Sails app `[project-name]`!
+
+* Step 6
+  - To startup your sails app run below commands
+
+  ```
+  $ cd test-project
+  $ sails lift
+  ```
+
+  -All Done, Cool. Now you can go to localhost:1337 to see your web homepage.
 
 **2.DataTypes**
 
