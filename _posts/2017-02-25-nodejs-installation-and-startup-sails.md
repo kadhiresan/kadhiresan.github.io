@@ -25,16 +25,14 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.j
 * Step 3
   - Make sure you have Node and NPM installed by running simple commands to see what version of each is installed and to run a simple test program
   - Open the terminal or any similar command line tool, and type below commands
+  
   > node -v
-
   > npm -v
 * Step 4
   - Install the Sails js globally
 
   ```
-  
-  $ npm install sails -g
-
+  $ npm install sails -g kad
   ```
 
 **2.DataTypes**
