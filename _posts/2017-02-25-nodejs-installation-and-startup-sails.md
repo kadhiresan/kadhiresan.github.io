@@ -3,21 +3,15 @@ layout: post
 title: Node JS Installation and Starting up the Sails js
 ---
 
-**Java Script:**
-object-oriented computer programming language commonly used to create interactive effects within web browsers, and now a days js is not only for web other than that.
+**Node Js:**
+Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
+- ([from nodejs.org!](https://nodejs.org/en/))
 
 **Table of contents**
 
-  1. Comments
-  2. Types (Primitives)
-  3. Arrays
-  4. Objects and this
-  5. Strings
-  6. Functions
-  7. Variables
-  8. Comparison Operators
-  9. Loops
-  10. Prototypes
+  1. Installing NodeJS and setup the sails on Local
+  2. Installing NodeJS and setup the sails on AWS
+
 
 **1.Comments**
 
