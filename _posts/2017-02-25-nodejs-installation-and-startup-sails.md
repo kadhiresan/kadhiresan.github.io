@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Node JS Installation and Starting up the Sails js
+title: Node JS Installation and Setup the sails js project
 ---
 
 **Node Js:**
-Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
-- ([from nodejs.org!](https://nodejs.org/en/))
+Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world. - ([from nodejs.org!](https://nodejs.org/en/))
 
 **Table of contents**
 
@@ -13,20 +12,27 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.j
   2. Installing NodeJS and setup the sails on AWS
 
 
-**1.Comments**
+**Installing NodeJS and setup the sails on Local**
 
-Comments: In javascript there are 2 types of comments
+  - We can download the Node.js source code or a pre-built installer for your platform, and start developing today from here ([Downloads](https://nodejs.org/en/download/)).
+  - it's always better to download stable version of any software, i would suggest you do the same.
 
-* Single line comment
-* Multi line comment
 
-```javascript
-//this is a single line comment
-
-/*
-  this is a multi line comment
-*/
-```
+* Step 1
+  - Download the you nodejs source code or pre-built installer for your platform
+* Step 2
+  - Install the node software you download from the above link
+* Step 3
+  - Make sure you have Node and NPM installed by running simple commands to see what version of each is installed and to run a simple test program
+  - Open the terminal or any similar command line tool, and type below commands
+  > node -v
+  > npm -v
+* Step 4
+  - Install the Sails js globally
+  ```
+  $ npm install sails -g
+  
+  ```
 
 **2.DataTypes**
 
