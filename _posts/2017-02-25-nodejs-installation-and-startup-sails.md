@@ -4,7 +4,7 @@ title: Node JS Installation and Setup the sails js project
 ---
 
 **Node Js:**
-Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world. - ([from nodejs.org!](https://nodejs.org/en/))
+Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world. - [from nodejs.org!](https://nodejs.org/en/)
 
 **Table of contents**
 
@@ -15,7 +15,7 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.j
 **Installing NodeJS and setup the sails on Local**
 
   - We can download the Node.js source code or a pre-built installer for your platform, and start developing today from here ([Downloads](https://nodejs.org/en/download/)).
-  - it's always better to download stable version of any software, i would suggest you do the same.
+  - it's always better to download *stable version* of any software, i would suggest you do the same.
 
 
 * Step 1
@@ -31,7 +31,7 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.j
 
   ```
   $ node -v
-    $ npm -v
+   $ npm -v
   ```
 * Step 4
   - Install the Sails js globally, To install
