@@ -74,7 +74,7 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.j
   - create AWS EC2 instance and connect to server via ssh
 
 * Step 2
-  - We just have to use the "apt" package manager. We should refresh our local package before install anything from the repositories
+  - We just have to use the "apt" package manager for installation, But before We should refresh our local package before install anything from the repositories
 
   ```
   $ sudo apt-get update
