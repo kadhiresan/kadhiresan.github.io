@@ -97,10 +97,10 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.j
   - it will install latest stable version of the node
 
 * Step 5
-  - Install the Sails js globally, To install
+  - To Install the Sails js globally type below command
 
   ```
-  $ npm
+  $ npm install sails -g
   ```
 
 * Step 6
@@ -112,7 +112,7 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.j
   ```
 
 * Step 7
-  - To generate a new app, just cd into the directory where you want it to be, and type:
+  - To generate a new app, just cd into the directory where you want it to be, and type below command
 
   ```
   $ sails new [project-name]
@@ -133,7 +133,7 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.j
   ![_config.yml]({{ site.baseurl }}/images/nodejs_installation/sails-lift.png)
 
 * Step 9
-  - Oops, in ordr to see our output on web browser, we need to Set Up Reverse Proxy Serve.
+  - Oops, in order to see our output on web browser, we need to Set Up **Reverse Proxy Serve**.
   - So, install Nginx using apt-get
 
   ```
