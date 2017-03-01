@@ -14,14 +14,14 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.j
 
 **Installing NodeJS and setup the sails on Local**
 
-  - We can download the Node.js source code or a pre-built installer for your platform, and start developing today from here ([Downloads](https://nodejs.org/en/download/)).
+  - We can download the Node.js source code or a pre-built installer for your platform. for([Downloads](https://nodejs.org/en/download/)).
   - it's always better to download *stable version* of any software, i would suggest you do the same.
 
 
 * Step 1
-  - Download the you nodejs source code or pre-built installer for your platform
+  - Download your nodejs source code or pre-built installer for your platform
 * Step 2
-  - Install the node software, you download from the above link, you will see this type of screen in your last step in installation.
+  - Install the node software, you downloaded from the above link, you will see this type of screen in your last step in installation.
 
   ![_config.yml]({{ site.baseurl }}/images/nodejs_installation/nodejs-setup.png)
 
@@ -37,7 +37,7 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.j
   - Install the Sails js globally, To install
 
   ```
-  $ npm
+  $ npm install sails -g
   ```
 
 * Step 5
