@@ -147,7 +147,7 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.j
   $ sudo vi /etc/nginx/sites-available/default
   ```
 
-  - Add this line inside "location/" - proxy_pass http://localhost:1337;
+  - Add this line inside "location/" - **proxy_pass http://localhost:1337;**
 
   ![_config.yml]({{ site.baseurl }}/images/nodejs_installation/proxy_serve.png)
 
