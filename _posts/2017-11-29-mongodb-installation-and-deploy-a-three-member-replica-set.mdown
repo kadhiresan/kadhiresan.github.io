@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MongoDB Installation and Deploy a Three Member Replica Set
+title: MongoDB Installation and Deploying a Replica Set
 ---
 
 **This blog:**
