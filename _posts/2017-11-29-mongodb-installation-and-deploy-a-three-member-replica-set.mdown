@@ -19,58 +19,147 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.j
 
 
 * Step 1
-
-* Step 1 
-  - Create a /etc/yum.repos.d/mongodb-org-3.4.repo file so that you can install MongoDB directly, using yum.
-  
-  ```
-  sudo vi /etc/yum.repos.d/mongodb-org-3.4.repo
-  ```
+  - Download your nodejs source code or pre-built installer for your platform
 * Step 2
-  - Add below lines into your file and save:
+  - Install the node software, you downloaded from the above link, you will see this type of screen in your last step in installation.
 
-  ```
-  [mongodb-org-3.4]
-  name=MongoDB Repository
-  baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.4/x86_64/
-  gpgcheck=1
-  enabled=1
-  gpgkey=https://www.mongodb.org/static/pgp/server-3.4.asc
-  ```
+  ![_config.yml]({{ site.baseurl }}/images/nodejs_installation/nodejs-setup.png)
 
 * Step 3
-  - Install the MongoDB packages and associated tools
+  - Make sure you have Node and NPM installed by running simple commands to see what version of each is installed and to run a simple test program
+  - Open the terminal or any similar command line tool, and type below commands
 
   ```
-  sudo yum install -y mongodb-org
+  $ node -v
+   $ npm -v
   ```
-
-
-**MongoD Manipulation**
-
-  - Start MongoDB:
+* Step 4
+  - To Install the Sails js globally type below command
 
   ```
-  sudo service mongod start
+  $ npm install sails -g
   ```
-  
-  - Verify that MongoDB has started successfully:
+
+* Step 5
+  - To generate a new app, just cd into the directory where you want it to be, and type:
 
   ```
-  sudo tail -f /var/log/mongodb/mongod.log  (OR) sudo service mongod status
+  $ sails new [project-name]
   ```
- 
-  - Stop MongoDB:
+  - If its done, you will get message like this
+  > info: Created a new Sails app `[project-name]`!
+
+* Step 6
+  - To startup your sails app run below commands
 
   ```
-  sudo service mongod stop
+  $ cd test-project
+   $ sails lift
   ```
-  
-  - Restart MongoDB:
+
+  -Cool, All Done. Now you will see this output from you terminal
+
+  ![_config.yml]({{ site.baseurl }}/images/nodejs_installation/sails-lift.png)
+
+* Step 7
+  - Start your coding, njoy :)
+
+
+**Installing NodeJS and setup the sails on AWS EC2**
+
+  - Here, we can download the Node.js via NVM 
+  - Node Version Manager (NVM) is a little bash script that allows you to manage multiple versions of Node.js on the same box. A version manager really helps to test our applications under different versions of the related software. [more info on NVM](https://github.com/creationix/nvm)
+
+* Step 1
+  - create AWS EC2 instance and connect to server via ssh
+
+* Step 2
+  - We just have to use the "apt" package manager for installation, But before We should refresh our local package before install anything from the repositories
 
   ```
-  sudo service mongod restart
+  $ sudo apt-get update
+   $ sudo apt-get install build-essential libssl-dev
   ```
+* Step 3
+  - Install the NVM
+
+  ```
+  $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+  ```
+
+* Step 4
+  - Install the Node js
+
+  ```
+  $ nvm install stable
+  ```
+
+  - it will install latest stable version of the node
+
+* Step 5
+  - To Install the Sails js globally type below command
+
+  ```
+  $ npm install sails -g
+  ```
+
+* Step 6
+  - Make sure you have Node and NPM installed by running simple commands to see what version of each is installed and to run a simple test program
+
+  ```
+  $ node -v
+   $ npm -v
+  ```
+
+* Step 7
+  - To generate a new app, just cd into the directory where you want it to be, and type below command
+
+  ```
+  $ sails new [project-name]
+  ```
+  - If its done, you will get message like this
+  > info: Created a new Sails app `[project-name]`!
+
+* Step 8
+  - To startup your sails app run below commands
+
+  ```
+  $ cd test-project
+   $ sails lift
+  ```
+
+  -Cool, All Done. Now you will see this output from you terminal
+
+  ![_config.yml]({{ site.baseurl }}/images/nodejs_installation/sails-lift.png)
+
+* Step 9
+  - Oops, in order to see our output on web browser, we need to Set Up **Reverse Proxy Serve**.
+  - So, install Nginx using apt-get
+
+  ```
+  $ sudo apt-get install nginx
+  ```
+
+* Step 10
+  - Now open the default server block configuration file for editing and add our localhost:1337
+
+  ```
+  $ sudo vi /etc/nginx/sites-available/default
+  ```
+
+  - Add this line inside "location/" - **proxy_pass http://localhost:1337;**
+
+  ![_config.yml]({{ site.baseurl }}/images/nodejs_installation/proxy_serve.png)
+
+  - Once you are done adding the location blocks for your applications, save and exit.
+
+* Step 11
+  - Now restart Nginx
+
+  ```
+  $ sudo service nginx restart
+  ```
+  - Now try it out by accessing your web server's URL (its public IP address or domain name).
 
 
 
