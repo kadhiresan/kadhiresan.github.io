@@ -1,7 +1,12 @@
 ---
 layout: post
-title: MongoDB Installation and Deploying three member replica set
+title: MongoDB and Replica Set
 ---
 
-**Java Script:**
-  This blog describes how to create a three-member replica set
+**MongoDB:**
+MongoDB is a free and open-source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemas.
+
+**Table of contents**
+
+  1. MongoDB Installing NodeJS and setup the sails on Local
+  2. Creating a three-member replica set (Create 3 ec2 instances (red-hat-linux system))
