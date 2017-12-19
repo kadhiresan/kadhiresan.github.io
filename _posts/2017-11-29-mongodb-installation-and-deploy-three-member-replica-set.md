@@ -115,8 +115,8 @@ Now we are going to create replica set with these 3 mongodb instances, In order 
   - 8.Add the remaining members to the replica set.
   
     ```
-      rs.add("<private ip 2>:27017");
-        rs.add("<private ip 3>:27017");
+    rs.add("<private ip 2>:27017");
+    rs.add("<private ip 3>:27017");
     ```
 
 **Notes:**
