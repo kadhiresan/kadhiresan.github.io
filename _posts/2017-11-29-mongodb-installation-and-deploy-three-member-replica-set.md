@@ -66,16 +66,24 @@ MongoDB is a free and open-source cross-platform document-oriented database prog
 **Deploying a Replica Set**
 Now we are going to create replica set with these 3 mongodb instances, In order to do that we need to modify configuration of each of our mongodb instance
 
-  - 1. Edit the mongo confi file [Ref Link](https://docs.mongodb.com/manual/tutorial/deploy-replica-set/)
+  1. Edit the mongo confi file [Ref Link](https://docs.mongodb.com/manual/tutorial/deploy-replica-set/)
 
     ```
       sudo vi /etc/mongod.conf
     ```
-  - 2. Add your IP address to bindIP(Here i am using my private IP's) and set your replica set name
+  2. Add your IP address to bindIP(Here i am using my private IP's) and set your replica set name
     **Note**
       - We modify bindIp to IP of the instance.
       - Replica set name should be same for all the mongodb instance which you want to be a part of same replica set
-      - bindId: 172.0.0.1,<your private IP>
-      - replication:
-        - replSetName: <your replica set name>
-  - 3. Folow the same step(1, 2) for remaining instances and restart the mongod service on each instance
+
+      ```
+        bindId: 172.0.0.1,<your private IP>
+        replication:
+          replSetName: <your replica set name>
+      ```
+  3. Folow the same step(1, 2) for remaining instances and restart the mongod service on each instance
+  4. Start your mongod with --replSet
+
+    ```
+      sudo mongod --replSet religareMongoRepset
+    ```
