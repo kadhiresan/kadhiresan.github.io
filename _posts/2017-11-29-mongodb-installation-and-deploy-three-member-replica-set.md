@@ -9,7 +9,8 @@ MongoDB is a free and open-source cross-platform document-oriented database prog
 **Table of contents**
 
   1. Mongodb Installation on linux (red-hat-linux system)
-  2. Describes how to create a three-member replica set (create 3 ec2 instances)
+  2. MongoDB Manipulation
+  3. Describes how to create a three-member replica set (create 3 ec2 instances)
 
 
 **MongoDB Installation**
@@ -23,7 +24,7 @@ MongoDB is a free and open-source cross-platform document-oriented database prog
     ```
       sudo vi /etc/yum.repos.d/mongodb-org-3.4.repo
     ```
-  - Add below lines into your file and save
+* STEP 2: Add below lines into your file and save
   
   ```
     [mongodb-org-3.4]
@@ -33,4 +34,31 @@ MongoDB is a free and open-source cross-platform document-oriented database prog
     enabled=1
     gpgkey=https://www.mongodb.org/static/pgp/server-3.4.asc
   ```
-  - Install the MongoDB packages and associated tools:
+* STEP 3: Install the MongoDB packages and associated tools:
+
+  ```
+    sudo yum install -y mongodb-org
+  ```
+
+**MongoDB Manipulation**
+  
+  - Start MongoDB:
+    
+    ```
+      sudo service mongod start
+    ```
+  - Verify that MongoDB has started successfully:
+    
+    ```
+      sudo tail -f /var/log/mongodb/mongod.log  (OR) sudo service mongod status
+    ```
+  - Stop MongoDB:
+    
+    ```
+      sudo service mongod stop
+    ```
+  - Restart MongoDB:
+    
+    ```
+      sudo service mongod restart
+    ```
