@@ -83,7 +83,6 @@ Now we are going to create replica set with these 3 mongodb instances, In order 
       ```
   3. Folow the same step(1, 2) for remaining instances and restart the mongod service on each instance
   4. Start your mongod with --replSet
-
-    ```
-      sudo mongod --replSet religareMongoRepset
-    ```
+    
+    sudo mongod --replSet religareMongoRepset
+    
