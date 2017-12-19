@@ -66,15 +66,15 @@ MongoDB is a free and open-source cross-platform document-oriented database prog
 **Deploying a Replica Set**
 Now we are going to create replica set with these 3 mongodb instances, In order to do that we need to modify configuration of each of our mongodb instance
 
-  - 1. Edit the mongo confi file [Ref Link](https://docs.mongodb.com/manual/tutorial/deploy-replica-set/)
+  - 1.Edit the mongo confi file [Ref Link](https://docs.mongodb.com/manual/tutorial/deploy-replica-set/)
 
     ```
       sudo vi /etc/mongod.conf
     ```
 
-  - 2. Add your IP address to bindIP(Here i am using my private IP's) and set your replica set name
+  - 2.Add your IP address to bindIP(Here i am using my private IP's) and set your replica set name
     **Note**
-      - We modify bindIp to IP of the instance.
+      - We have to modify 'bindIp' into IP of the instance.
       - Replica set name should be same for all the mongodb instance which you want to be a part of same replica set
 
       ```
@@ -83,11 +83,39 @@ Now we are going to create replica set with these 3 mongodb instances, In order 
           replSetName: <your replica set name>
       ```
 
-  - 3. Folow the same step(1, 2) for remaining instances and restart the mongod service on each instance
+  - 3.Folow the same step(1, 2) for remaining instances and restart the mongod service on each instance
   
-  - 4. Start your mongod with --replSet
+  - 4.Start your mongod with --replSet
     
     ```
-      sudo mongod --replSet religareMongoRepset
+      sudo mongod --replSet <your replica set name>
+    ```
+
+  - 5.Start your mongo shell with --host
+  
+    ```
+      mongo --host <ip address>
+    ```
+
+  - 6.Initiate the replica set
+
+    ```
+      rs.initiate( {
+         _id : "religareMongoRepset",
+         members: [ { _id : 1, host : "<private ip 1>:27017" } ]
+      });
+    ```
+  
+  - 7.Verify the initial replica set configuration. Using any on of the below cmd
+    
+    ```
+      rs.status() OR rs.conf()
+    ```
+  
+  - 8.Add the remaining members to the replica set.
+  
+    ```
+      rs.add("<private ip 2>:27017");
+      rs.add("<private ip 3>:27017");
     ```
     
