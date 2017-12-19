@@ -449,21 +449,3 @@ var newPerson = new person('Kadhir', 23); //calling the person()
 
 console.log(newPerson); //Will print {name: "Kadhir", age: 23, model: "Car"}
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
