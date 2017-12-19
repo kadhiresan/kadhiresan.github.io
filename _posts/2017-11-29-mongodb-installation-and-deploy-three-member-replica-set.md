@@ -8,5 +8,14 @@ MongoDB is a free and open-source cross-platform document-oriented database prog
 
 **Table of contents**
 
-  1. MongoDB Installing NodeJS and setup the sails on Local
-  2. Creating a three-member replica set (Create 3 ec2 instances (red-hat-linux system))
+  1. Mongodb Installation on linux (red-hat-linux system)
+  2. Describes how to create a three-member replica set (create 3 ec2 instances)
+
+
+**Mongodb Installation**
+
+
+* STEP 1: Install MongoDB on each system (Here i am going to install MongoDB 3.4)
+  - Configure the package management system (yum):
+* Step 2
+  - Add below lines into your file and save
