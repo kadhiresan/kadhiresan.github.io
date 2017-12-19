@@ -101,8 +101,8 @@ Now we are going to create replica set with these 3 mongodb instances, In order 
 
     ```
       rs.initiate( {
-         _id : "religareMongoRepset",
-         members: [ { _id : 1, host : "<private ip 1>:27017" } ]
+        _id : "religareMongoRepset",
+        members: [ { _id : 1, host : "<private ip 1>:27017" } ]
       });
     ```
   
@@ -116,6 +116,19 @@ Now we are going to create replica set with these 3 mongodb instances, In order 
   
     ```
       rs.add("<private ip 2>:27017");
-      rs.add("<private ip 3>:27017");
+        rs.add("<private ip 3>:27017");
     ```
+
+**Notes:**
+
+* For querying secondary run the following command first. After running this, you can do all regular stuff on secondary.
+  
+  ```
+    rs.slaveOk()
+  ```
+* To see the replication status, run the following command on primary. This will show you if the secondaries are up to date or lagging.
+    
+  ```
+    db.printSlaveReplicationInfo()
+  ```
     
