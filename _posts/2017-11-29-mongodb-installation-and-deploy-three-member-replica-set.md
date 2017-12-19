@@ -71,6 +71,7 @@ Now we are going to create replica set with these 3 mongodb instances, In order 
     ```
       sudo vi /etc/mongod.conf
     ```
+
   2. Add your IP address to bindIP(Here i am using my private IP's) and set your replica set name
     **Note**
       - We modify bindIp to IP of the instance.
@@ -81,8 +82,12 @@ Now we are going to create replica set with these 3 mongodb instances, In order 
         replication:
           replSetName: <your replica set name>
       ```
+
   3. Folow the same step(1, 2) for remaining instances and restart the mongod service on each instance
+  
   4. Start your mongod with --replSet
     
-    sudo mongod --replSet religareMongoRepset
+    ```
+      sudo mongod --replSet religareMongoRepset
+    ```
     
