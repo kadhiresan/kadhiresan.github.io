@@ -131,4 +131,27 @@ Now we are going to create replica set with these 3 mongodb instances, In order 
   ```
     db.printSlaveReplicationInfo()
   ```
+
+**Import dump file into mongo instance**
+
+* STEP1: Copy the zip file into your instance
+  
+  ```
+    scp fileName.zip ec2-user@<ip address>
+  ```
+* STEP2: unzip the file
+* STEP3: Run this cmd to restore the DB:
+  
+  ```
+    mongorestore -d DataBasename folderName/
+  ```
+  - DataBasename: The name of your database which you want to create
+  - folderName: Which is having .bson/.json files
+
+**Exporting dump from mongo instance **
+
+* STEP1: mongodump -d <database name>
+* STEP2: zip -r <database name>.zip <database name>
+* STEP3: scp ec2-user@<ip address>:/home/ec2-user/dump/<database name>.zip .
+* STEP4: Done, Now check your system and find the .zip file
     
