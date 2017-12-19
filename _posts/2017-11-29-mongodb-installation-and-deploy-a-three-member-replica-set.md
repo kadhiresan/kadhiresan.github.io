@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaScript Basics and Guidelines
+title: MongoDB
 ---
 
 **Java Script:**
