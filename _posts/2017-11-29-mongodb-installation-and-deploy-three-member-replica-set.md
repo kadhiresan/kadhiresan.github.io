@@ -78,7 +78,7 @@ Now we are going to create replica set with these 3 mongodb instances, In order 
     - Replica set name should be same for all the mongodb instance which you want to be a part of same replica set
 
     ```
-      bindId: 172.0.0.1,<your private IP>
+      bindId: 127.0.0.1,<your private IP>
       replication:
         replSetName: <your replica set name>
     ```
